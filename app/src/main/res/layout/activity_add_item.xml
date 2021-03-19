@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD Item Form"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.80"
+        android:id="@+id/tvTitle"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#3F51B5"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvname"
+        android:paddingVertical="2dp"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toRightOf="@id/tvname"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:id="@+id/etname"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address :"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#3F51B5"
+        app:layout_constraintTop_toBottomOf="@id/tvname"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvaddress"
+        android:paddingVertical="2dp"
+        />
+
+    <EditText
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toRightOf="@id/tvaddress"
+        app:layout_constraintTop_toBottomOf="@id/tvname"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:id="@+id/etAddress"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#3F51B5"
+        app:layout_constraintTop_toBottomOf="@id/tvaddress"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvemail"
+        android:paddingVertical="2dp"
+        />
+
+    <EditText
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toRightOf="@id/tvemail"
+        app:layout_constraintTop_toBottomOf="@id/tvaddress"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:id="@+id/etemail"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone :"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#3F51B5"
+        app:layout_constraintTop_toBottomOf="@id/tvemail"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvphone"
+        android:paddingVertical="2dp"
+        />
+
+    <EditText
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toRightOf="@id/tvphone"
+        app:layout_constraintTop_toBottomOf="@id/tvemail"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:id="@+id/etphone"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:layout_constraintTop_toBottomOf="@id/etphone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/btadd"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintTop_toBottomOf="@id/etphone"
+        android:layout_marginTop="80dp"
+        app:layout_constraintLeft_toRightOf="@id/btadd"
+        android:layout_marginLeft="55dp"
+        android:id="@+id/btCancel"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show in Log"
+        app:layout_constraintTop_toBottomOf="@id/etphone"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/btshow"
+        app:layout_constraintLeft_toRightOf="@id/btCancel"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

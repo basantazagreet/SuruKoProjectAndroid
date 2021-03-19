@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/clMain"
+    tools:context=".RelativeActivity">
+
+<!--    K ko below k huncha declare garni ho-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chitwan Eats"
+        android:textColor="#00BFA5"
+        android:layout_marginTop="100dp"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:id="@+id/tvTitle1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:text="Enter your Username and password"
+        android:layout_below="@id/tvTitle1"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/tvSecondTitle"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Username"
+        android:layout_below="@id/tvSecondTitle"
+        android:id="@+id/etUserName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/etPassword"
+        android:layout_below="@id/etUserName"
+        android:hint="Password" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="#00BFA5"
+        android:textColor="#FFFFFF"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/etPassword"
+        android:id="@+id/btlogin"
+
+
+        />
+
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toast"
+        android:background="#00BFA5"
+        android:textColor="#FFFFFF"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/btlogin"
+        android:onClick="toastClicked"
+        android:id="@+id/bttoast"
+         />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Snackbar"
+        android:background="#00BFA5"
+        android:textColor="#FFFFFF"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/bttoast"
+        android:onClick="snackbarClicked"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:id="@+id/rlcolored"
+
+    >
+
+
+    <TextView
+        android:text="RED"
+        android:id="@+id/TextView01"
+        android:layout_height="wrap_content"
+        android:background="#f00"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:padding="25dp"/>
+
+<!--    The RED TextView control has no specific settings configured. By default, this control will be drawn in the upper left-hand corner of the parent layout.-->
+
+
+
+    <TextView
+        android:text="ORANGE"
+        android:layout_height="wrap_content"
+        android:background="#ffa500"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="25dp"/>
+
+<!--    The ORANGE TextView control is centered horizontally in the parent layout. Because all controls default to the top left-hand corner of the screen, this effectively anchors the control to the top middle edge of the parent layout.-->
+
+
+    <TextView
+        android:text="YELLOW"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="25dp"/>
+
+<!--    The YELLOW TextView control is aligned to the right-hand edge of the parent layout. Because all controls default to the top left-hand corner of the screen, this effectively anchors the control to the top right corner of the parent layout.-->
+
+    <TextView
+        android:text="GREEN"
+        android:layout_height="wrap_content"
+        android:background="#0f0"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/TextView05"
+        android:padding="25dp"
+        android:layout_centerVertical="true"/>
+
+<!--    The GREEN TextView control is centered vertically within the parent layout and configured to display to the left of the BLUE TextView control.-->
+
+    <TextView
+        android:text="BLUE"
+        android:layout_height="wrap_content"
+        android:background="#00f"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:padding="25dp"/>
+
+<!--    The BLUE TextView control is aligned to the center (horizontally and vertically) of the parent control. This displays it in the middle of the screen.-->
+
+
+    <TextView
+        android:text="INDIGO"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/TextView05"
+        android:background="#4b0082"
+        android:padding="25dp"
+        android:layout_centerVertical="true"/>
+
+<!--    The INDIGO TextView control is centered vertically within the parent layout and configured to display to the right of the BLUE TextView control.-->
+
+    <TextView
+        android:text="VIOLET"
+        android:layout_height="wrap_content"
+        android:background="#ee82ee"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/TextView07"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:padding="25dp"/>
+
+<!--    The VIOLET TextView control is aligned to the bottom edge of the parent layout. It’s width is also set to fill the parent, allowing it to stretch across the bottom edge of the screen.    -->
+
+</RelativeLayout>
+
