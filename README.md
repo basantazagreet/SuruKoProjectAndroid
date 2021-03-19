@@ -1,0 +1,2 @@
+# SuruKoProjectAndroid
+Basic android codes.
